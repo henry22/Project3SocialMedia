@@ -9,8 +9,9 @@
 import UIKit
 
 class MasterViewController: UITableViewController {
-
-    var objects = [AnyObject]()
+    
+    //Know for sure that the objects we're adding will always be strings, so we can change that declaration AnyObject to String
+    var objects = [String]()
 
 
     override func awakeFromNib() {
@@ -21,6 +22,20 @@ class MasterViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //Let us work with the filesystem, and we'll be using it to look for files.
+        let fileManager = NSFileManager.defaultManager()
+        //Where I can find all those images I added to my app
+        let path = NSBundle.mainBundle().resourcePath!
+        //That is set to the contents of the directory at a path
+        let items = fileManager.contentsOfDirectoryAtPath(path, error: nil)
+        
+        for item in items as! [String] {
+            //if the item has the prefix "nssl"
+            if item.hasPrefix("nssl") {
+                //Adds the matching filename to the end of a list called objects
+                objects.append(item)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
