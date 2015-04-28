@@ -14,6 +14,7 @@
 		BA95E8731AECCB2C0078C622 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA95E8721AECCB2C0078C622 /* Images.xcassets */; };
 		BA95E8761AECCB2C0078C622 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA95E8741AECCB2C0078C622 /* LaunchScreen.xib */; };
 		BA95E8821AECCB2C0078C622 /* Project1StormViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95E8811AECCB2C0078C622 /* Project1StormViewerTests.swift */; };
+		BAC85C961AEF554D00B901C6 /* Content in Resources */ = {isa = PBXBuildFile; fileRef = BAC85C951AEF554D00B901C6 /* Content */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		BA95E87B1AECCB2C0078C622 /* Project1StormViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project1StormViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA95E8801AECCB2C0078C622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA95E8811AECCB2C0078C622 /* Project1StormViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project1StormViewerTests.swift; sourceTree = "<group>"; };
+		BAC85C951AEF554D00B901C6 /* Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Content; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +81,10 @@
 		BA95E8661AECCB2C0078C622 /* Project1StormViewer */ = {
 			isa = PBXGroup;
 			children = (
-				BA95E8691AECCB2C0078C622 /* AppDelegate.swift */,
+				BAC85C951AEF554D00B901C6 /* Content */,
 				BA95E86B1AECCB2C0078C622 /* MasterViewController.swift */,
 				BA95E86D1AECCB2C0078C622 /* DetailViewController.swift */,
 				BA95E86F1AECCB2C0078C622 /* Main.storyboard */,
-				BA95E8721AECCB2C0078C622 /* Images.xcassets */,
-				BA95E8741AECCB2C0078C622 /* LaunchScreen.xib */,
 				BA95E8671AECCB2C0078C622 /* Supporting Files */,
 			);
 			path = Project1StormViewer;
@@ -93,6 +93,9 @@
 		BA95E8671AECCB2C0078C622 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BA95E8741AECCB2C0078C622 /* LaunchScreen.xib */,
+				BA95E8721AECCB2C0078C622 /* Images.xcassets */,
+				BA95E8691AECCB2C0078C622 /* AppDelegate.swift */,
 				BA95E8681AECCB2C0078C622 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -197,6 +200,7 @@
 			files = (
 				BA95E8711AECCB2C0078C622 /* Main.storyboard in Resources */,
 				BA95E8761AECCB2C0078C622 /* LaunchScreen.xib in Resources */,
+				BAC85C961AEF554D00B901C6 /* Content in Resources */,
 				BA95E8731AECCB2C0078C622 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +417,7 @@
 				BA95E8871AECCB2C0078C622 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA95E8881AECCB2C0078C622 /* Build configuration list for PBXNativeTarget "Project1StormViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				BA95E88A1AECCB2C0078C622 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
