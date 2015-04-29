@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1FCA7A2E-46CF-4732-A72D-DB7F20C691E1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BD7B472CB32EC74EE71E5DFEC180EB20C449CC00</key>
+		<string>https://github.com/henry22/Project1StormViewer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Project1StormViewer.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BD7B472CB32EC74EE71E5DFEC180EB20C449CC00</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/henry22/Project1StormViewer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BD7B472CB32EC74EE71E5DFEC180EB20C449CC00</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BD7B472CB32EC74EE71E5DFEC180EB20C449CC00</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Project1StormViewer</string>
+		</dict>
+	</array>
+</dict>
+</plist>
