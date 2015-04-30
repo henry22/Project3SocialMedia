@@ -50,6 +50,7 @@ class MasterViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
+                //tell Swift that we're about to segue to a DetailViewController, then set its detailItem to be whatever the user just tapped
                 let detailViewController = segue.destinationViewController as! DetailViewController
                 detailViewController.detailItem = objects[indexPath.row]
             }
