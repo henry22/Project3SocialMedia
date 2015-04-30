@@ -34,6 +34,18 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        //It means that it passes the method on to UIViewController, which may do its own processing
+        super.viewWillAppear(animated)
+        navigationController?.hidesBarsOnTap = true
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        //It means that it passes the method on to UIViewController, which may do its own processing
+        super.viewWillDisappear(animated)
+        navigationController?.hidesBarsOnTap = false
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
