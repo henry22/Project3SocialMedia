@@ -37,13 +37,11 @@ class MasterViewController: UITableViewController {
             }
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    
 
     // MARK: - Segues
 
@@ -80,8 +78,5 @@ class MasterViewController: UITableViewController {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    
-    
-
 }
 
