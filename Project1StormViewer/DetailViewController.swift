@@ -31,8 +31,12 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
+        
+        //The .Action(UIBarButtonSystem.Action) system item displays an arrow coming out of a box, signalling the user can do something when it's tapped.The action parameter is saying "when you're tapped, call the shareTapped() method," and the target parameter tells the button that the method belongs to the current view controller – self.
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "sharedTapped")
     }
     
     override func viewWillAppear(animated: Bool) {
