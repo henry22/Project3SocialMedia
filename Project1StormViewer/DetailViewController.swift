@@ -50,6 +50,14 @@ class DetailViewController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.hidesBarsOnTap = false
     }
+    
+    func sharedTapped() {
+        //Passing in two items: an array of items you want to share, and an array of any of your own app's services you want to make sure are in the list
+        //We're passing an empty array into the second parameter, because our app doesn't have any services to offer
+        //[detailImageView.image!], the image was being displayed in a UIImageView called detailImageView, and UIImageView has an optional property called image, which holds a UIImage
+        let viewController = UIActivityViewController(activityItems: [detailImageView.image!], applicationActivities: [])
+        presentViewController(viewController, animated: true, completion: nil)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
