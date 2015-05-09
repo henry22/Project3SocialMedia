@@ -53,7 +53,13 @@ class DetailViewController: UIViewController {
     }
     
     func sharedTapped() {
-        
+        //Created with the Facebook service type
+        let viewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        viewController.setInitialText("Look at this great picture!")
+        viewController.addImage(detailImageView.image!)
+        //The NSURL(string:) method converts the string into a full NSURL instance, which can then be passed to addURL()
+        viewController.addURL(NSURL(string: "http://www.photolab.noaa.gov/nssl"))
+        presentViewController(viewController, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
